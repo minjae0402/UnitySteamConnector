@@ -10,7 +10,7 @@ public class SteamTest : MonoBehaviour
 
     private void Start()
     {
-        if (!SteamManager.Initialized) { return; }
+        if (!SteamManager.Initialized) { return; } // 강민재 : 스팀 사용시 필수 요소
 
         string steamName = SteamFriends.GetPersonaName();
         CSteamID steamID = SteamUser.GetSteamID();
